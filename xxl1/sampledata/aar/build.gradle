@@ -1,0 +1,9 @@
+
+
+configurations.maybeCreate(("default"))
+artifacts.add("default",file('oaid_sdk_2.1.0.aar'))
+artifacts.add("default",file('netmobsecLib_4.4.7.10_202304071432.aar'))
+artifacts.add("default",file('appLog.aar'))
+artifacts.add("default",file('humesdk-1.0.0.aar'))
+artifacts.add("default",file('channelsdk.aar'))
+artifacts.add("default",file('monitorsdk-1.0.13.aar'))
