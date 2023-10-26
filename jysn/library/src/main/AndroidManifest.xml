@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.haoxi.jysn"
+    package="com.sjzgdkj.jysn"
     >
     <queries>
         <package android:name="com.tencent.mm" />
@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         tools:replace="android:allowBackup">
 
-        <activity android:name="com.haoxi.jysn.com.sjzgdkj.jysn.MainActivity"
+        <activity android:name="com.sjzgdkj.jysn.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bun.miitmdid"
+    android:versionCode="20230202"
+    android:versionName="2.1.0" > <!-- lib version override -->
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="30"
+        tools:overrideLibrary="com.zui.opendeviceidlibrary,com.huawei.ads,com.heytap.openid.sdk,com.oplus.stdid.sdk" />
+
+    <!-- asus -->
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+    <!-- freeme -->
+    <uses-permission android:name="freemme.permission.msa" />
+
+    <!-- Not recommend using QUERY_ALL_PACKAGES. Use queries Instead. -->
+    <!-- <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" /> -->
+    <queries>
+
+        <!-- freeme -->
+        <package android:name="com.android.creator" />
+        <!-- zte -->
+        <package android:name="com.mdid.msa" />
+        <!-- samsung -->
+        <package android:name="com.samsung.android.deviceidservice" />
+        <!-- coolpad -->
+        <package android:name="com.coolpad.deviceidsupport" />
+        <!-- oppo -->
+        <package android:name="com.heytap.openid" />
+    </queries>
+
+    <application android:allowBackup="false" >
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-identifier"
+            android:value="ads-identifier:3.4.39.302" />
+    </application>
+
+</manifest>
